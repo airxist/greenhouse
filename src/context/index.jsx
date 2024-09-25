@@ -3,24 +3,41 @@ import { createContext, useContext, useState } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const [openNav, setOpenNav] = useState(false);
-  const nav_open = () => setOpenNav(true);
-  const nav_close = () => setOpenNav(false);
-  const nav_toggle = () => setOpenNav((prev) => !prev);
+  const [registerAs, setRegisterAs] = useState("customer");
+  const [modal, setModal] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+  const [category, setCategory] = useState("Accessories");
+
+  const openModalWithContent = (content) => {
+    setModal(true);
+    setModalContent(content);
+  };
 
   return (
-    <AppContext.Provider value={{ openNav, nav_open, nav_close, nav_toggle }}>
+    <AppContext.Provider
+      value={{
+        registerAs,
+        setRegisterAs,
+        modal,
+        setModal,
+        modalContent,
+        setModalContent,
+        openModalWithContent,
+        category,
+        setCategory,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
 };
 
-const useGlobalContext = () => {
+const useGlobalAppContext = () => {
   const context = useContext(AppContext);
   if (!context) {
-    throw new Error("no context");
+    throw new Error("no context found");
   }
   return context;
 };
 
-export { useGlobalContext, AppProvider };
+export { useGlobalAppContext, AppProvider };

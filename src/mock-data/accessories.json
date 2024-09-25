@@ -1,0 +1,14 @@
+[
+  { "id": "001", "img": "/accessories/rings.jpg", "title": "Rings" },
+  { "id": "002", "img": "/accessories/bag2.jpg", "title": "Bag2" },
+  { "id": "003", "img": "/accessories/bag3.jpg", "title": "Bag3" },
+  { "id": "004", "img": "/accessories/bag4.png", "title": "Bag4" },
+  { "id": "005", "img": "/accessories/bag5.png", "title": "Bag5" },
+  { "id": "006", "img": "/accessories/ear-rings.jpg", "title": "Eaar rings" },
+  { "id": "007", "img": "/accessories/ear2.jpg", "title": "Eaar rings" },
+  { "id": "008", "img": "/accessories/frame1.jpg", "title": "Frame 1" },
+  { "id": "009", "img": "/accessories/red-bg-bag.png", "title": "Red Bag" },
+  { "id": "010", "img": "/accessories/watch1.jpg", "title": "Watch" },
+  { "id": "011", "img": "/accessories/watch2.jpg", "title": "Watch" },
+  { "id": "012", "img": "/accessories/watch3.jpg", "title": "Watch" }
+]

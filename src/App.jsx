@@ -1,19 +1,25 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Account from "./pages/management/Account";
-import History from "./pages/management/History";
-import Settings from "./pages/management/Settings";
+import Home from "./features/home/Home";
+import Auth from "./features/auth/Auth";
+import { useGlobalAppContext } from "./context";
+import Modal from "./shared/components/Modal";
+import CategoryPage from "./features/category-page/CategoryPage";
+import About from "./features/about/About";
+import Contact from "./features/Contact/Contact";
+import NotFound from "./features/not-found/NotFound";
 
 function App() {
+  const { modal } = useGlobalAppContext();
   return (
     <>
+      {modal && <Modal />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/account" element={<Account />} />
-        <Route path="/history" element={<History />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/contact/*" element={<Contact />} />
+        <Route path="/authentication/*" element={<Auth />} />
+        <Route path="/categories/:category" element={<CategoryPage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

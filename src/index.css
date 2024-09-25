@@ -4,14 +4,54 @@
 
 @layer utilities {
   .flex-center {
-    @apply flex items-center justify-center
+    @apply flex items-center justify-center;
   }
 }
 
-.hide {
-  @apply opacity-0 translate-x-full;
+body {
+  @apply bg-foundation-grey;
 }
 
-.show {
-  @apply opacity-100 translate-x-0
+.primary-btn {
+  @apply bg-fysi-green;
+}
+
+.neutral-btn {
+  @apply border bg-white;
+}
+
+.auth-input-con {
+  @apply flex flex-col gap-y-1;
+}
+
+.auth-input {
+  @apply w-full rounded-[6px] h-14 border px-3;
+}
+
+.auth-btn {
+  @apply rounded-md w-full flex-center;
+}
+
+.auth-primary-btn {
+  @apply bg-fysi-green font-medium text-white  h-[51px];
+}
+
+.auth-transparent-btn {
+  @apply bg-transparent font-medium text-fysi-green h-[51px] border-2 border-fysi-green;
+}
+
+.auth-neutral-btn {
+  @apply neutral-btn h-11;
+}
+
+.modal {
+  @apply fixed top-0 left-0 size-full bg-foundation-700/50 z-50 flex-center p-3;
+}
+
+.modal-main {
+  @apply w-full md:w-[705px] rounded-[25px] bg-foundation-grey py-20 relative px-5 md:px-[125px];
+}
+
+.quantity {
+  @apply absolute -top-1/2 -right-2 size-[15px] rounded-full text-white bg-error flex-center text-xs font-medium;
 }
