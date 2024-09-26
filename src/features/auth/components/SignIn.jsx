@@ -3,7 +3,7 @@ import HeadDesc from "../../../shared/components/auth/HeadDesc";
 import FormRow from "../../../shared/components/FormRow";
 import Btn from "../../../shared/components/Btn";
 import { Link } from "react-router-dom";
-import Google from "../../../svg/Google";
+import Google from "../../../assets/svg/Google";
 
 const SignIn = () => {
   return (

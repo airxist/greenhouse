@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from "react";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const [registerAs, setRegisterAs] = useState("customer");
+  const [registerAs, setRegisterAs] = useState("vendor");
   const [modal, setModal] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [category, setCategory] = useState("Accessories");

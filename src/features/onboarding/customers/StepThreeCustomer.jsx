@@ -1,9 +1,9 @@
 import React from "react";
-import HeadDesc from "../../../shared/components/auth/HeadDesc";
 import FormRow from "../../../shared/components/FormRow";
+import HeadDesc from "../../../shared/components/auth/HeadDesc";
 import Btn from "../../../shared/components/Btn";
 
-const CreateAccount = () => {
+const StepThreeCustomer = ({ goToNext }) => {
   return (
     <div className="w-full md:w-[507px]">
       <HeadDesc
@@ -41,10 +41,15 @@ const CreateAccount = () => {
           />
         </div>
 
-        <Btn href="/authentication/personal" text="Continue" className="auth-btn auth-primary-btn mt-8" />
+        <Btn
+          // href="/authentication/personal"
+          text="Continue"
+          className="auth-btn auth-primary-btn mt-8"
+          handleClick={goToNext}
+        />
       </form>
     </div>
   );
 };
 
-export default CreateAccount;
+export default StepThreeCustomer;

@@ -1,8 +1,7 @@
-import React from "react";
 import { useGlobalAppContext } from "../../context";
-import Overlay from "../../features/auth/components/Overlay";
+import Overlay from "../../features/onboarding/components/Overlay";
 
-const AuthLayout = ({ type, children }) => {
+const OnboardingLyt = ({ children }) => {
   const { registerAs } = useGlobalAppContext();
   return (
     <section className="flex items-start">
@@ -13,7 +12,7 @@ const AuthLayout = ({ type, children }) => {
               ? "/customer-onboarding.jpg"
               : "/vendor-onboarding.jpg"
           }
-          alt={type}
+          alt={registerAs}
           className="size-full object-center object-cover"
         />
         {registerAs === "vendor" && <Overlay />}
@@ -25,4 +24,4 @@ const AuthLayout = ({ type, children }) => {
   );
 };
 
-export default AuthLayout;
+export default OnboardingLyt;

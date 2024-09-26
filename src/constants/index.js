@@ -188,12 +188,56 @@ const returns_info = [
   },
 ];
 
+const faq = [
+  {
+    question: "Why Fysi",
+    answer: "There is an answer",
+  },
+  {
+    question: "How do you knwo a product is truely eco-friendly?",
+    answer: "Yes ask and you shall receive",
+  },
+  {
+    question: "CAn I trust the vendor on fysi?",
+    answer: "yess you can",
+  },
+];
+
+const reviews = [
+  {
+    name: "Kriston Watson",
+    rating: 3,
+    reviewText:
+      "The lamp looks great and fits my eco-conscious lifestyle, but I found the light a bit too dim for my liking. It’s fine for ambiance, but not ideal for detailed work. Still, a good choice for those looking for a sustainable option.",
+  },
+  {
+    name: "Chinedu Maduka",
+    rating: 1,
+    reviewText:
+      "I was pleasantly surprised by the quality of this lamp. It’s sturdy, well-made, and the bamboo is smooth to the touch. It’s a little smaller than I expected, but it fits perfectly on my desk without taking up too much space.",
+  },
+  {
+    name: "Tunde Adebayo",
+    rating: 2,
+    reviewText:
+      "The bamboo desk lamp is stylish and functional. It gives off the perfect amount of light for late-night work sessions. The only downside is that the cord could be a bit longer. But overall, a great eco-friendly choice!",
+  },
+  {
+    name: "Grace Edwards",
+    rating: 8,
+    reviewText:
+      "I absolutely love this bamboo desk lamp! It adds such a warm, natural feel to my workspace. The design is sleek and modern, yet it blends seamlessly with my home office decor. Plus, knowing that it’s eco-friendly makes me feel even better about my purchase. Highly recommend",
+  },
+];
+
 export {
   about_pages,
   categories,
+  faq,
   filter_group,
   desktop_links,
   returns_info,
+  reviews,
   sign_up_title,
   sign_up_desc,
   what_we_offer,

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
 import ReusablesLyt from "../../shared/lyt/ReusablesLyt";
 import Returns from "./pages/Returns";
+import Report from "./pages/Report";
 // import NotFound from "../not-found/NotFound";
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
       <Routes>
         <Route index element={<Main />} />
         <Route path="/returns" element={<Returns />} />
+        <Route path="/report" element={<Report />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </ReusablesLyt>

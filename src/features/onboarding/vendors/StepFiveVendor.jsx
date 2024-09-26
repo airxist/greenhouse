@@ -1,9 +1,9 @@
 import React from "react";
-import Logo from "../../../svg/Logo";
 import Btn from "../../../shared/components/Btn";
 import { useGlobalAppContext } from "../../../context";
+import Logo from "../../../assets/svg/Logo";
 
-const Account = () => {
+const StepFiveVendor = () => {
   const { openModalWithContent } = useGlobalAppContext();
   return (
     <div>
@@ -46,4 +46,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default StepFiveVendor;

@@ -1,10 +1,16 @@
-import React from 'react'
-import OtpDigit from './OtpDigit'
-import Btn from '../../../shared/components/Btn'
+import React from "react";
+import HeadDesc from "../../../shared/components/auth/HeadDesc";
+import OtpDigit from "../components/OtpDigit";
 
-const CustomerVerification = () => {
+const StepTwoCustomer = ({ goToNext }) => {
   return (
-    <div className="mt-7">
+    <div className="w-full md:w-[507px]">
+      <HeadDesc
+        title="Verify your email"
+        desc="We have sent a verification code to Graceadebayo@gmail.com"
+      />
+
+      <div className="mt-7">
         <div className="flex items-center justify-between">
           <OtpDigit />
           <OtpDigit />
@@ -14,9 +20,10 @@ const CustomerVerification = () => {
 
         <div className="mt-9">
           <Btn
-            href="/authentication/create-account"
+            // href="/authentication/create-account"
             text="Submit"
             className="auth-btn auth-primary-btn"
+            handleClick={goToNext}
           />
 
           <div className="mt-2 text-center max-w-[452px] mx-auto">
@@ -27,7 +34,8 @@ const CustomerVerification = () => {
           </div>
         </div>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default CustomerVerification
+export default StepTwoCustomer;

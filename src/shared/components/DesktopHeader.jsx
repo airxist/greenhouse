@@ -26,7 +26,7 @@ const DesktopHeader = () => {
         <div className="flex items-center text-white divide-x-2">
           <p className="pr-2">Get 50% off selected items</p>
           <Link
-            to="/authentication"
+            to="/onboarding"
             className="pl-2"
             onClick={() => setRegisterAs("vendor")}
           >
@@ -63,7 +63,7 @@ const DesktopHeader = () => {
                     }
 
                     if (link.title === "Support") {
-                      navigate("/support");
+                      navigate(`/support/${item.title}`);
                     }
                   }}
                 />
@@ -78,7 +78,7 @@ const DesktopHeader = () => {
 
           <div className="w-[253px] flex items-center justify-between">
             <Link
-              to="/authentication"
+              to="/onboarding"
               onClick={() => setRegisterAs("customer")}
             >
               Sign Up

@@ -8,9 +8,11 @@ export default {
         active: "#E6ECE9",
         foundation: {
           DEFAULT: "#E6ECE9",
+          100: '#B0C3BA',
           grey: "#F9FAFB",
           700: "#B1B2B2",
           border: "#B0C3BA",
+          600: '#E3E4E4'
         },
         office: {
           brown: "#8D8484",

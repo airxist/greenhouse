@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Heart from "../../assets/svg/Heart";
 
 const ProductListItem = ({ product, wish, className }) => {
   const { title, img, price } = product;
   console.log(product);
   return (
-    <div>
+    <Link to={`/product-page/${title}`}>
       <div
         className={`${
           className || "w-[189px] md:w-[288px] h-[231px] md:h-[417px]"
@@ -25,7 +26,7 @@ const ProductListItem = ({ product, wish, className }) => {
         <p className="text-xs md:text-sm">{title}</p>
         <p className="font-bold text-xs md:text-sm">{price || "#500"}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
