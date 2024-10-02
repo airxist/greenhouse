@@ -11,6 +11,8 @@ import Support from "./features/support/Support";
 import Product from "./features/product/Product";
 import OrderSummary from "./features/order-summary/OrderSummary";
 import Thanks from "./features/thanks/Thanks";
+import Vendor from "./features/vendor/Vendor";
+import Customer from "./features/customer/Customer";
 
 function App() {
   const { modal } = useGlobalAppContext();
@@ -22,9 +24,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/categories/:category" element={<CategoryPage />} />
         <Route path="/contact/*" element={<Contact />} />
+        <Route path="/customer/*" element={<Customer />} />
         <Route path="/onboarding/*" element={<Onboarding />} />
         <Route path="/order-summary" element={<OrderSummary />} />
         <Route path="/product-page/:id" element={<Product />} />
+        <Route path="/vendor/*" element={<Vendor />} />
         <Route path="/support/*" element={<Support />} />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="*" element={<NotFound />} />

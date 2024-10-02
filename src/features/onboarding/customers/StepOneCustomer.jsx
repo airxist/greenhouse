@@ -20,7 +20,7 @@ const StepOneCustomer = ({ goToNext }) => {
           inputClass="auth-input"
         />
         <div className="mt-9">
-          <Btn className="auth-btn auth-primary-btn" text="Continue" />
+          <Btn className="auth-btn auth-primary-btn" text="Continue" handleClick={() => goToNext()} />
 
           <Terms />
 

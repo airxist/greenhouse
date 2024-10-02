@@ -1,6 +1,6 @@
 import React from "react";
 
-const Routing = ({ category, type=1 }) => {
+const Routing = ({ category, type = 1 }) => {
   const Routing1 = () => {
     return (
       <div className="px-5 md:px-[112px] h-16 border-4 flex items-center">

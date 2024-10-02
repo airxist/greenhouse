@@ -10,6 +10,10 @@ import Supplies from "../assets/svg/Supplies";
 import Beauty from "../assets/svg/Beauty";
 import House from "../assets/svg/House";
 import Travel from "../assets/svg/Travel";
+import Home from "../assets/svg/Home";
+import Orders from "../assets/svg/Orders";
+import Discount from "../assets/svg/Discount";
+import Account from "../assets/svg/Account";
 
 const sign_up_title = "Welcome to Fysi";
 const sign_up_desc =
@@ -230,9 +234,31 @@ const reviews = [
   },
 ];
 
+const vendor_navlinks = [
+  { title: "Dashboard", icon: Home, href: "/vendor/dashboard" },
+  { title: "Product", icon: Box, href: "/vendor/products" },
+  { title: "Order", icon: Orders, href: "/vendor/order" },
+  { title: "Discounts & Promotion", icon: Discount, href: "/vendor/discounts" },
+  { title: "Account Statement", icon: Account, href: "/vendor/accounts" },
+];
+
+const vendor_footerlinks = [
+  { title: "Settings", icon: Discount, href: "/vendor/discounts" },
+  { title: "Help", icon: Account, href: "/vendor/accounts" },
+];
+
+const customer_navlinks = [
+  { title: "My Account", icon: Home, href: "/vendor/dashboard" },
+  { title: "Order History", icon: Box, href: "/vendor/products" },
+  { title: "Inbox", icon: Orders, href: "/vendor/order" },
+  { title: "Reviews", icon: Discount, href: "/vendor/discounts" },
+  { title: "Settings", icon: Account, href: "/vendor/accounts" },
+];
+
 export {
   about_pages,
   categories,
+  customer_navlinks,
   faq,
   filter_group,
   desktop_links,
@@ -241,4 +267,6 @@ export {
   sign_up_title,
   sign_up_desc,
   what_we_offer,
+  vendor_navlinks,
+  vendor_footerlinks,
 };

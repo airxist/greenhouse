@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hamburger = () => {
+const Hamburger = ({color}) => {
   return (
     <svg
       width="24"
@@ -11,19 +11,19 @@ const Hamburger = () => {
     >
       <path
         d="M3 7H21"
-        stroke="#292D32"
+        stroke={color || "#292D32"}
         stroke-width="1.5"
         stroke-linecap="round"
       />
       <path
         d="M3 12H21"
-        stroke="#292D32"
+        stroke={color || "#292D32"}
         stroke-width="1.5"
         stroke-linecap="round"
       />
       <path
         d="M3 17H21"
-        stroke="#292D32"
+        stroke={color || "#292D32"}
         stroke-width="1.5"
         stroke-linecap="round"
       />

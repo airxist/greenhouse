@@ -1,6 +1,7 @@
 import React from "react";
 import HeadDesc from "../../../shared/components/auth/HeadDesc";
 import OtpDigit from "../components/OtpDigit";
+import Btn from "../../../shared/components/Btn";
 
 const StepTwoCustomer = ({ goToNext }) => {
   return (
