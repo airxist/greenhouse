@@ -1,5 +1,4 @@
-import VendorLyt from "../../../shared/lyt/VendorLyt";
-import Heading from "../../../shared/components/Heading";
+import Heading from "../../../../shared/components/Heading";
 import DateDisplay from "../components/DateDisplay";
 import Analytics from "../components/Analytics";
 

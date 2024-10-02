@@ -6,6 +6,14 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+
+  .form-block__col {
+    @apply flex flex-col;
+  }
+
+  .form-block__row {
+    @apply flex flex-row items-center border justify-between;
+  }
 }
 
 body {
@@ -17,7 +25,7 @@ body {
 }
 
 .neutral-btn {
-  @apply border bg-white;
+  @apply border bg-white text-gray-400;
 }
 
 .auth-input-con {
@@ -54,4 +62,192 @@ body {
 
 .quantity {
   @apply absolute -top-1/2 -right-2 size-[15px] rounded-full text-white bg-error flex-center text-xs font-medium;
+}
+
+.sidebar {
+  @apply w-[19%] min-h-screen py-7;
+}
+
+.sidebar--green {
+  @apply bg-fysi-green;
+}
+
+.input--sm-hsize {
+  @apply h-10;
+}
+.input--normal-hsize {
+  @apply min-h-14;
+}
+
+.input--big-hsize {
+  @apply min-h-[157px];
+}
+
+.btn {
+  @apply p-4 flex-center;
+}
+
+.btn-sm {
+  @apply py-2 px-4 flex-center text-sm;
+}
+
+.btn--primary {
+  @apply bg-fysi-green text-white;
+}
+
+.btn--neutral {
+  @apply border bg-white text-gray-400;
+}
+
+.form-block {
+  @apply p-6 rounded-[8px];
+}
+
+.form-block--white {
+  @apply bg-white;
+}
+
+.form-block--border {
+  @apply border border-foundation-700;
+}
+
+.form-block__title {
+  @apply text-[18px] font-medium;
+}
+
+.form-block__col-set {
+  @apply grid;
+}
+
+.form-block--set2 {
+  @apply grid-cols-1 md:grid-cols-2 gap-x-[47px];
+}
+
+.form-block--set4 {
+  @apply grid-cols-4 gap-x-[47px];
+}
+
+/* .form-block__col {
+  @apply flex flex-col;
+}
+
+.form-block__row {
+  @apply flex items-center border justify-between;
+} */
+
+.form-block__divide {
+  @apply border-b;
+}
+
+.form-block__label {
+  @apply text-sm font-medium;
+}
+
+.form-block__input-field {
+  @apply px-4 bg-white border rounded-[6px];
+}
+
+.card-upload {
+  @apply rounded-[6px] border border-dashed py-6 px-4 flex-center;
+}
+
+.card-upload__box {
+  @apply w-full;
+}
+
+.card-upload__icon {
+  @apply size-12 rounded-full bg-[#F9FAFB] mx-auto;
+}
+
+.card-upload__text {
+  @apply text-sm text-center;
+}
+
+.card-upload__text--green {
+  @apply font-semibold text-fysi-green-500;
+}
+
+.card-account {
+  @apply bg-white p-6;
+}
+
+.card-picture {
+  @apply w-full md:w-[38%] min-h-[224px] flex-center;
+}
+
+.card-picture__user {
+  @apply w-[44%] aspect-square border-4 rounded-full;
+}
+
+.card-picture__text {
+  @apply font-medium;
+}
+
+.card-picture__link {
+  @apply text-xs;
+}
+
+.card-bill {
+  @apply w-full md:w-[62%] min-h-[224px] border mt-6 md:mt-0;
+}
+
+.card-bill__title {
+  @apply font-medium;
+}
+
+.card-bill__divider {
+  @apply w-full h-[1px] bg-fysi-green my-[14px];
+}
+
+.card-bill__user-details {
+  @apply w-[285px] border;
+}
+
+.card-bill__text {
+  @apply text-sm;
+}
+
+.card-bill__text--fade {
+  @apply text-gray-300;
+}
+
+.mobile-header {
+  @apply md:hidden border-8 px-[15px] py-[30px] relative;
+}
+
+.mobile-navlinks-container {
+  @apply fixed bottom-0 left-0 h-[calc(100vh-116px)] z-10 w-full bg-white px-4 py-3;
+}
+
+.mobile-nav {
+  @apply list-none flex flex-col gap-y-4 mt-[18px];
+}
+
+/*************** toggle options *************/
+.toggler {
+  @apply flex-center w-fit;
+}
+
+.toggle-option {
+  @apply flex-center text-sm gap-x-2 border-b-2 p-4 font-medium;
+}
+
+.toggle-option--active {
+  @apply text-fysi-green border-fysi-green;
+}
+
+.toggle-option--inactive {
+  @apply text-[#D0D5DD] border-[#D0D5DD];
+}
+
+.toggle-option__tag {
+  @apply rounded-full text-xs w-fit py-[0.5px] px-1 font-medium;
+}
+
+.toggle-option__tag--active {
+  @apply bg-fysi-green-500 text-white;
+}
+
+.toggle-option__tag--inactive {
+  @apply bg-[#333333];
 }

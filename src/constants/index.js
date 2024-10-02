@@ -236,10 +236,28 @@ const reviews = [
 
 const vendor_navlinks = [
   { title: "Dashboard", icon: Home, href: "/vendor/dashboard" },
-  { title: "Product", icon: Box, href: "/vendor/products" },
-  { title: "Order", icon: Orders, href: "/vendor/order" },
-  { title: "Discounts & Promotion", icon: Discount, href: "/vendor/discounts" },
-  { title: "Account Statement", icon: Account, href: "/vendor/accounts" },
+  {
+    title: "Product",
+    icon: Box,
+    lists: [
+      { text: "Management", href: "/vendor/product/manage-product" },
+      { text: "Add Products", href: "/vendor/product/add-products" },
+    ],
+  },
+  {
+    title: "Order",
+    icon: Orders,
+    lists: [{ text: "Track Orders", href: "/vendor/orders/order" }],
+  },
+  {
+    title: "Discounts & Promotion",
+    icon: Discount,
+    lists: [
+      { text: "Promotion Management", href: "/vendor/discount/promotion" },
+      { text: "Monitor Promotions", href: "/vendor/discount/monitor" },
+    ],
+  },
+  { title: "Account Statement", icon: Account, href: "/vendor/account" },
 ];
 
 const vendor_footerlinks = [
@@ -248,15 +266,59 @@ const vendor_footerlinks = [
 ];
 
 const customer_navlinks = [
-  { title: "My Account", icon: Home, href: "/vendor/dashboard" },
-  { title: "Order History", icon: Box, href: "/vendor/products" },
-  { title: "Inbox", icon: Orders, href: "/vendor/order" },
-  { title: "Reviews", icon: Discount, href: "/vendor/discounts" },
-  { title: "Settings", icon: Account, href: "/vendor/accounts" },
+  { title: "My Account", icon: Home, href: "/customer/my-account" },
+  { title: "Order History", icon: Box, href: "/customer/order-history" },
+  { title: "Inbox", icon: Orders, href: "/customer/inbox" },
+  { title: "Reviews", icon: Discount, href: "/customer/reviews" },
+  { title: "Settings", icon: Account, href: "/customer/settings" },
 ];
+
+const admin_navlinks = [
+  { title: "Overview", icon: Home, href: "/admin/overview" },
+  { title: "Products", icon: Box, href: "/admin/products" },
+  { title: "Orders", icon: Orders, href: "/admin/orders" },
+  { title: "Customers", icon: Discount, href: "/admin/customers" },
+  { title: "Vendors", icon: Account, href: "/admin/vendors" },
+  { title: "Analytics", icon: Account, href: "/admin/analytics" },
+  { title: "Campaign", icon: Account, href: "/admin/campaign" },
+];
+
+const toggle_options = {
+  orderIndex: [
+    { title: "All Orders", show: true, digit: 200 },
+    { title: "Shipped", show: false },
+    { title: "Cancelled", show: false },
+    { title: "Delivery Failed", show: false },
+    { title: "Returned", show: false },
+  ],
+  tracking: [
+    { title: "Tracking", show: true },
+    { title: "Active", show: false },
+    { title: "My Shipping", show: false },
+  ],
+  account: [
+    { title: "All", show: true, digit: 5 },
+    { title: "Open", show: false },
+    { title: "Paid", show: false },
+    { title: "Unpaid", show: false },
+  ],
+  promotion: [
+    { title: "All", show: true, digit: 5 },
+    { title: "Open", show: false },
+    { title: "Ongoing", show: false },
+    { title: "Cancelled", show: false },
+    { title: "Expired", show: false },
+  ],
+  monitor: [
+    { title: "All", show: true, digit: 5 },
+    { title: "Cancelled", show: false },
+    { title: "Expired", show: false },
+  ],
+};
 
 export {
   about_pages,
+  admin_navlinks,
   categories,
   customer_navlinks,
   faq,
@@ -266,6 +328,7 @@ export {
   reviews,
   sign_up_title,
   sign_up_desc,
+  toggle_options,
   what_we_offer,
   vendor_navlinks,
   vendor_footerlinks,

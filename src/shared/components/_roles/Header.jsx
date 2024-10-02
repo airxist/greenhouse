@@ -1,7 +1,7 @@
-import Btn from "../../../shared/components/Btn";
 import Home from "../../../assets/svg/Home";
-import SearchBar from "../../../shared/components/SearchBar";
 import Bell from "../../../assets/svg/Bell";
+import Btn from "../Btn";
+import SearchBar from "../SearchBar";
 
 const Header = () => {
   return (

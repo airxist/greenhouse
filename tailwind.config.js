@@ -4,15 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        "fysi-green": "#002C17",
+        "fysi-green": { DEFAULT: "#002C17", 500: "#003E20" },
         active: "#E6ECE9",
         foundation: {
           DEFAULT: "#E6ECE9",
-          100: '#B0C3BA',
+          100: "#B0C3BA",
           grey: "#F9FAFB",
           700: "#B1B2B2",
           border: "#B0C3BA",
-          600: '#E3E4E4'
+          600: "#E3E4E4",
         },
         office: {
           brown: "#8D8484",
@@ -24,8 +24,8 @@ export default {
           DEFAULT: "#AAA3A3",
         },
         "fysi-gray": {
-          thick: '#0C111D'
-        }
+          thick: "#0C111D",
+        },
       },
     },
   },
