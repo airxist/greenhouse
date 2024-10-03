@@ -4,7 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "fysi-green": { DEFAULT: "#002C17", 500: "#003E20" },
+        "fysi-green": {
+          DEFAULT: "#002C17",
+          100: "#B0C3BA",
+          500: "#003E20",
+          600: "#00381D",
+        },
         active: "#E6ECE9",
         foundation: {
           DEFAULT: "#E6ECE9",

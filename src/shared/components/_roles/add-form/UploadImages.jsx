@@ -1,5 +1,5 @@
-import FormBlock from "../../../../../shared/components/vendor/FormBlock";
-import UploadCard from "../../../../../shared/components/UploadCard";
+import UploadCard from '../../UploadCard'
+import FormBlock from "../FormBlock";
 
 const UploadImages = () => {
   return (

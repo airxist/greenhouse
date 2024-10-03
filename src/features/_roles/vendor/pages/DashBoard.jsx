@@ -1,20 +1,10 @@
-import Heading from "../../../../shared/components/Heading";
-import DateDisplay from "../components/DateDisplay";
-import Analytics from "../components/Analytics";
+import Analytics from "../../../../shared/components/_roles/Analytics";
+import WelcomeBoard from "../../../../shared/components/_roles/WelcomeBoard";
 
 const DashBoard = () => {
   return (
     <div className="px-8 border-8">
-      <div className="flex items-center justify-between">
-        <Heading
-          title="Welcome Psalmuhel Tech Hub"
-          tclass="text-xl font-medium"
-          desc="Take a look at all your report at a glance!"
-          dclass="text-sm text-gray-400"
-        />
-
-        <DateDisplay />
-      </div>
+      <WelcomeBoard />
 
       <Analytics />
     </div>

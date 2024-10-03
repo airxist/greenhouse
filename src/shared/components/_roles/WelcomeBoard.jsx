@@ -1,5 +1,5 @@
-import DateDisplay from "../../../features/_roles/vendor/components/DateDisplay";
 import Heading from "../Heading";
+import DateDisplay from "./DateDisplay";
 
 const WelcomeBoard = () => {
   return (

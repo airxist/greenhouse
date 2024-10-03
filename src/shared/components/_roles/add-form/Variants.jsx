@@ -1,6 +1,6 @@
-import Btn from "../../../../../shared/components/Btn";
-import FormRow from "../../../../../shared/components/FormRow";
-import FormBlock from "../../../../../shared/components/vendor/FormBlock";
+import Btn from "../../Btn";
+import FormBlock from "../FormBlock";
+import FormRow from '../../FormRow'
 
 const Variants = () => {
   return (

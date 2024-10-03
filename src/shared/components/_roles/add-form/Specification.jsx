@@ -1,5 +1,5 @@
-import FormRow from "../../../../../shared/components/FormRow";
-import FormBlock from "../../../../../shared/components/vendor/FormBlock";
+import FormBlock from "../FormBlock";
+import FormRow from "../../FormRow";
 
 const Specification = () => {
   return (

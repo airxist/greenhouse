@@ -1,6 +1,5 @@
-import React from "react";
-import FormBlock from "../../../../../shared/components/vendor/FormBlock";
-import FormRow from "../../../../../shared/components/FormRow";
+import FormBlock from "../FormBlock";
+import FormRow from '../../FormRow'
 
 const ProductInformation = () => {
   return (

@@ -1,7 +1,7 @@
 import Btn from "../../../../shared/components/Btn";
 import Heading from "../../../../shared/components/Heading";
 import SearchBar from "../../../../shared/components/SearchBar";
-import Analytics from "../components/Analytics";
+import Analytics from "../../../../shared/components/_roles/Analytics";
 
 const Manage = () => {
   return (

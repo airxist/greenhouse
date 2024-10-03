@@ -1,6 +1,6 @@
 import Heading from "../../../../shared/components/Heading";
 import Btn from "../../../../shared/components/Btn";
-import Analytics from "../components/Analytics";
+import Analytics from "../../../../shared/components/_roles/Analytics";
 import ToggleOptions from "../../customer/components/ToggleOptions";
 import { toggle_options } from "../../../../constants";
 

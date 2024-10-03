@@ -1,8 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import Manage from "./Manage";
-import AddProduct from "./AddProduct";
+import AddProduct from "../../shared-pages/AddProduct";
 import Heading from "../../../../shared/components/Heading";
-import Btn from "../../../../shared/components/Btn";
 import Choose from "../../../../shared/components/Choose";
 
 const Product = () => {

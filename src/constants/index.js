@@ -314,6 +314,13 @@ const toggle_options = {
     { title: "Cancelled", show: false },
     { title: "Expired", show: false },
   ],
+  admin_order: [
+    { title: "All Time", show: true },
+    { title: "12 Months", show: false },
+    { title: "30 Days", show: false },
+    { title: "7 Days", show: false },
+    { title: "24 Hours", show: false },
+  ],
 };
 
 export {
